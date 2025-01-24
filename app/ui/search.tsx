@@ -14,9 +14,9 @@ export default function Search({ placeholder }: { placeholder: string }) {
 		params.set('page', '1');
 		
 		if (term) {
-			params.set('search', term);
+			params.set('query', term);
 		} else {
-			params.delete('search');
+			params.delete('query');
 		}
 
 		replace(`${pathname}?${params.toString()}`);
