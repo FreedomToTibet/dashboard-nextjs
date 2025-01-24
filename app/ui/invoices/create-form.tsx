@@ -1,3 +1,5 @@
+'use client'
+
 import {useActionState} from 'react';
 import {CustomerField} from '@/app/lib/definitions';
 import {createInvoice, State} from '@/app/lib/actions';
